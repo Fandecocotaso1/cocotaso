@@ -1,3 +1,6 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
+    game.over(true)
+})
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -140,4 +143,6 @@ scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     `)
 tiles.setCurrentTilemap(tilemap`level1`)
+tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
 scene.cameraFollowSprite(mySprite)
+info.startCountdown(10)

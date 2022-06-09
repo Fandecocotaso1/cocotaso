@@ -145,4 +145,4 @@ scene.setBackgroundImage(img`
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
 scene.cameraFollowSprite(mySprite)
-info.startCountdown(10)
+info.startCountdown(20)
